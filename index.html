@@ -30,16 +30,16 @@
         <option value="600">Small</option>
       </select>
 
-      <input type="number" class="form-control" placeholder="Select Quantity" />
+      <input type="number" class="form-control" placeholder="Select Quantity" id="quantity" />
 
-      <select name="size" id="size" class="form-control">
+      <select name="crust" id="crust" class="form-control">
         <option value="select-crust">Select Pizza Crust</option>
         <option value="200">Crispy</option>
         <option value="400">Stuffed</option>
         <option value="300">Gluten Free</option>
       </select>
 
-      <select name="size" id="size" class="form-control">
+      <select name="toppings" id="toppings" class="form-control">
         <option value="select-toppings">Select Pizza Toppings</option>
         <option value="400">Onions</option>
         <option value="500">Sausage</option>
@@ -49,6 +49,30 @@
 
       <input type="submit" class="btn btn-primary" value="order" id="order" />
     </form>
+
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Quantity</th>
+            <th scope="col">Pizza</th>
+            <th scope="col">Size</th>
+            <th scope="col">Crust</th>
+            <th scope="col">Toppings</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+
+      <div class="form-group">
+        <label for="delivery">I Need Delivery</label>
+        <input type="checkbox" id="delivery">
+      </div>
+      <input type="submit" class="btn btn-success" value="Complete Order">
+      
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
